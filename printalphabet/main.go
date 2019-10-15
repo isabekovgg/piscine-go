@@ -5,7 +5,7 @@ import (
 )
 func main() { 
 	for i :=97; i <=122; i++ {
-		fmt.Printf("%c",i)
+		z01.PrinRune("%c",i)
 	}
-	fmt.Printf("\n")
+	z01.PrintRune("\n")
 }
