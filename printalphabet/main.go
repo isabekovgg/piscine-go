@@ -7,5 +7,5 @@ func main() {
 	for i :=97; i <=121; i++ {
 		fmt.Printf("%c",i)
 	}
-	fmt.Println("c", 122)
+	fmt.Printf("z\n")
 }
