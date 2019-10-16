@@ -16,7 +16,7 @@ func PrintComb2() {
 						z01.PrintRune(',')
 						z01.PrintRune(' ')
 						}
-					if else c == a && d > b {
+					if c == a && d > b {
 						z01.PrintRune(a)
 						z01.PrintRune(b)
 						z01.PrintRune(' ')
@@ -29,4 +29,5 @@ func PrintComb2() {
 			}
 		}
 	}
+	z01.PrintRune('\n')
 }
