@@ -11,7 +11,7 @@ func PrintComb() {
 						z01.PrintRune(i)
 						z01.PrintRune(x)
 						z01.PrintRune(y)
-					}else {
+					} else {
 						z01.PrintRune(i)
 						z01.PrintRune(x)
 						z01.PrintRune(y)
