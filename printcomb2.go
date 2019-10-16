@@ -14,7 +14,7 @@ func PrintComb2() {
 						z01.PrintRune(c)
 						z01.PrintRune(d)
 					}
-					else if c > a {
+					else { if c > a {
 						z01.PrintRune(a)
 						z01.PrintRune(b)
 						z01.PrintRune(' ')
@@ -23,7 +23,7 @@ func PrintComb2() {
 						z01.PrintRune(',')
 						z01.PrintRune(' ')
 					}
-					else if c == a && d > b {
+					 if c == a && d > b {
 						z01.PrintRune(a)
 						z01.PrintRune(b)
 						z01.PrintRune(' ')
@@ -31,6 +31,7 @@ func PrintComb2() {
 						z01.PrintRune(d)
 						z01.PrintRune(',')
 						z01.PrintRune(' ')
+					 }
 					}
 				}
 			}
