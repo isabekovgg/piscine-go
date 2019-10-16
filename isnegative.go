@@ -1,4 +1,4 @@
-package main
+package piscine-go
 
 import "github.com/01-edu/z01"
 
