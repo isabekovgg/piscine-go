@@ -1,9 +1,13 @@
-package piscine
+package main
 
-// import "fmt"
+// import "github.com/01-edu/z01"
 
 func PrintStr(str string) {
-	for i := 0; i < len(str); i++ {
-		fmt.Printf(string(str[i]))
+	for _, x := range str {
+		z01.PrintRune(x)
 	}
 }
+// func main() {
+// 	str := "Hello World!"
+// 	PrintStr(str)
+// }
