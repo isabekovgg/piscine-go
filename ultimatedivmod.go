@@ -2,7 +2,7 @@ package piscine
 
 // import "fmt"
 
-func UltimateDivMod (a *int, b *int) {
+func UltimateDivMod(a *int, b *int) {
 
 	var x int
 	var y int
