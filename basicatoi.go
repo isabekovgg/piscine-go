@@ -10,8 +10,8 @@ func BasicAtoi(s string) int {
 		y++
 	}
 
-	for x := 0; x <= y - 1; x++ {
-		final = final * 10 + int(stringrune[x]-'0')
+	for x := 0; x <= y-1; x++ {
+		final = final*10 + int(stringrune[x]-'0')
 	}
 	return final
 }
