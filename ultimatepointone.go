@@ -8,8 +8,6 @@ func UltimatePointOne(n ***int) {
 
 }
 
-
-
 // func main() {
 // 	a := 0
 // 	b := &a
