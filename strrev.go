@@ -1,10 +1,10 @@
-package main
+package piscine
 
 // import "fmt"
 
 func StrRev(s string) string {
 	var reverse string
-	for x := len(s)-1; x >= 0; x-- {
+	for x := len(s) - 1; x >= 0; x-- {
 		reverse += string(s[x])
 	}
 	return reverse
