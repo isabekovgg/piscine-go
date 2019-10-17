@@ -11,7 +11,7 @@ func BasicAtoi2(s string) int {
 	}
 	for x := 0; x <= y-1; x++ {
 		if int(stringrune[x]-'0') >= 0 && int(stringrune[x]-'0') < 10 {
-		final = final*10 + int(stringrune[x]-'0')
+			final = final*10 + int(stringrune[x]-'0')
 		} else {
 			return 0
 		}
