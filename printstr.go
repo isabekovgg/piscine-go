@@ -7,6 +7,7 @@ func PrintStr(str string) {
 		z01.PrintRune(x)
 	}
 }
+
 // func main() {
 // 	str := "Hello World!"
 // 	PrintStr(str)
