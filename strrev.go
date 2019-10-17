@@ -4,7 +4,12 @@ package piscine
 
 func StrRev(s string) string {
 	var reverse string
-	for x := len(s) - 1; x >= 0; x-- {
+	y := 0
+	for range s {
+		y++
+	}
+
+	for x := y - 1; x >= 0; x-- {
 		reverse += string(s[x])
 	}
 	return reverse
