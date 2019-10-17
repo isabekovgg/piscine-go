@@ -1,6 +1,6 @@
 package piscine
 
-import ("fmt")
+import "fmt"
 
 func StrLen(str string) int {
 	y := 0
