@@ -3,7 +3,7 @@ package piscine
 // import "fmt"
 
 func IterativeFactorial(nb int) int {
-	if nb > -20 && nb < 20{
+	if nb > -20 && nb < 20 {
 		result := 1
 		for x := 1; x <= nb; x++ {
 			result = result * x
