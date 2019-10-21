@@ -3,10 +3,10 @@ package piscine
 // import "fmt"
 
 func Sqrt(nb int) int {
-	var x int
+	x := 0
 	if nb >= 1 {
 		for i := nb; i >= 1; i-- {
-			if i == nb/i {
+			if i * i == nb {
 				x = i
 			}
 		}
@@ -17,8 +17,8 @@ func Sqrt(nb int) int {
 }
 
 // func main() {
-// 	arg1 := 4
-// 	arg2 := 36
+// 	arg1 := 10
+// 	arg2 := 5
 // 	fmt.Println(Sqrt(arg1))
 // 	fmt.Println(Sqrt(arg2))
 
