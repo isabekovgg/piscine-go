@@ -8,7 +8,7 @@ func RecursiveFactorial(nb int) int {
 			return 1
 		}
 		return nb * RecursiveFactorial(nb-1)
-	}	
+	}
 }
 
 // func main() {
