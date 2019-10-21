@@ -9,10 +9,10 @@ func Atoi(s string) int {
 	for range s {
 		y++
 	}
-	if int(stringrune[0] == '-' {
+	if int(stringrune[0]-'0') == '-' || int(stringrune[0]-'0') == '+' {
 		for x := 1; x <= y-1; x++ {
 			if int(stringrune[x]-'0') >=0  && int(stringrune[x]-'0') < 10 {
-					final = final*10 + int(stringrune[x]-'0')		
+					final = final*10 + int(stringrune[x]-'0')
 				} else {
 					return 0
 			}
@@ -20,7 +20,7 @@ func Atoi(s string) int {
 	} else {
 		for x := 0; x <= y-1; x++ {
 			if int(stringrune[0]-'0') >=0  && int(stringrune[x]-'0') < 10 {
-					final = final*10 + int(stringrune[x]-'0')		
+					final = final*10 + int(stringrune[x]-'0')
 				} else {
 					return 0
 			}
@@ -28,7 +28,6 @@ func Atoi(s string) int {
 	}
 	return final
 }
-
 
 func main() {
 	s := "12345"

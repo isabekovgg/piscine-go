@@ -1,4 +1,4 @@
-package main
+package student
 
 import "github.com/01-edu/z01"
 
@@ -36,8 +36,6 @@ func Raid1a(x, y int) {
 			}
 			z01.PrintRune('\n')
 		}
-	} else {
-		z01.PrintRune('0')
 	}
 }
 
