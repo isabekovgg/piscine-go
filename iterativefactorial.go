@@ -1,4 +1,4 @@
-// package quest4
+package piscine
 
 // import "fmt"
 
