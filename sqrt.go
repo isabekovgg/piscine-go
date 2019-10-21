@@ -4,8 +4,8 @@ package piscine
 
 func Sqrt(nb int) int {
 	var x int
-	if nb > 1 {
-		for i := nb - 1; i >= 2; i-- {
+	if nb >= 1 {
+		for i := nb; i >= 1; i-- {
 			if i == nb/i {
 				x = i
 			}
