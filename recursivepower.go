@@ -1,6 +1,6 @@
-package main
+package piscine
 
-import "fmt"
+// import "fmt"
 
 func RecursivePower(nb int, power int) int {
 
@@ -10,8 +10,8 @@ func RecursivePower(nb int, power int) int {
 	return nb*RecursivePower(nb, power-1)
 }
 
-func main() {
-	arg1 := 4
-	arg2 := 3
-	fmt.Println(RecursivePower(arg1, arg2))
-}
+// func main() {
+// 	arg1 := 4
+// 	arg2 := 3
+// 	fmt.Println(RecursivePower(arg1, arg2))
+// }
