@@ -6,7 +6,7 @@ func Sqrt(nb int) int {
 	x := 0
 	if nb >= 1 {
 		for i := nb; i >= 1; i-- {
-			if i * i == nb {
+			if i*i == nb {
 				x = i
 			}
 		}
