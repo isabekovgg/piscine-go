@@ -15,6 +15,6 @@ func Fibonacci(index int) int {
 }
 
 // func main() {
-// 	arg1 := 4
+// 	arg1 := 5
 // 	fmt.Println(Fibonacci(arg1))
 // }
