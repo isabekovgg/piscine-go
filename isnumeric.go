@@ -2,7 +2,7 @@ package piscine
 
 // import "fmt"
 
-func IsAlpha(str string) bool {
+func IsNumeric(str string) bool {
 	new := []rune(str)
 	y := 0
 	for range str {
