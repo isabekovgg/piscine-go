@@ -9,7 +9,7 @@ func IsAlpha(str string) bool {
 		y++
 	}
 	for i := 0; i < y; i++ {
-		if new[i] > '0' && (new[i] < '9'  {
+		if new[i] > '0' && new[i] < '9' {
 			return true
 		}
 	}
