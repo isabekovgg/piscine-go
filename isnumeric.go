@@ -9,9 +9,9 @@ func IsNumeric(str string) bool {
 		y++
 	}
 	for i := 0; i < y; i++ {
-		if new[i] > '0' && new[i] < '9' {
-			return true
+		if new[i] < '0' || new[i] > '9' {
+			return false
 		}
 	}
-	return false
+	return true
 }
