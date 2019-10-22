@@ -9,7 +9,6 @@ func Capitalize(s string) string {
 		y++
 	}
 	for i := 0; i < y; i++ {
-
 		if new[i] >= 'A' && new[i] <= 'Z' {
 			new[i] = (new[i] + 32)
 		}
@@ -17,7 +16,7 @@ func Capitalize(s string) string {
 			new[0] = (new[0] - 32)
 		}
 		if i > 0 {
-			if new[i-1] > 65 || new[i-1] < 122 {
+			if new[i-1] <= 'A' || new[i-1] >= 'z' {
 				if new[i] >= 'a' && new[i] <= 'z' {
 					new[i] = (new[i] - 32)
 					i++
