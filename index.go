@@ -12,13 +12,17 @@ func Index(s string, toFind string) int {
 	for range s {
 		y++
 	}
-	for i := 0; i < y; i++ {
-		if str[i] == sub[0] {
-			x = i
-			break
-		} else {
-			x = -1
+	if y > 0 {
+		for i := 0; i <= y-1; i++ {
+			if str[i] == sub[0] {
+				x = i
+				break
+			} else {
+				x = -1
+			}
 		}
+	} else {
+		x = 0
 	}
 	return x
 }
