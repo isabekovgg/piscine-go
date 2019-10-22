@@ -9,7 +9,7 @@ func IsLower(str string) bool {
 		y++
 	}
 	for i := 0; i < y; i++ {
-		if new[i] < 'a' || (new[i] > 'z' {
+		if new[i] < 'a' || new[i] > 'z' {
 			return false
 		}
 	}
