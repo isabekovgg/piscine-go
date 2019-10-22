@@ -2,7 +2,7 @@ package piscine
 
 // import "fmt"
 
-func IsUpper(str string) bool {
+func IsPrintable(str string) bool {
 	new := []rune(str)
 	y := 0
 	for range str {
