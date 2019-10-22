@@ -26,7 +26,7 @@ func Index(s string, toFind string) int {
 			}
 		}
 	} else {
-		x = -1
+		x = 0
 	}
 	return x
 }
