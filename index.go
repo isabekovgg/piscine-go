@@ -9,10 +9,14 @@ func Index(s string, toFind string) int {
 	str := []rune(s)
 	sub := []rune(toFind)
 	y := 0
+	z := 0
 	for range s {
 		y++
 	}
-	if y > 0 {
+	for range toFind {
+		z++
+	}
+	if y > 0 && z > 0 {
 		for i := 0; i <= y-1; i++ {
 			if str[i] == sub[0] {
 				x = i
@@ -22,7 +26,7 @@ func Index(s string, toFind string) int {
 			}
 		}
 	} else {
-		x = 0
+		x = -1
 	}
 	return x
 }
