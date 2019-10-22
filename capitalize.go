@@ -17,7 +17,15 @@ func Capitalize(s string) string {
 			new[0] = (new[0] - 32)
 		}
 		if i > 0 {
-			if new[i-1] == ' ' {
+			if new[i-1] > 65 || new[i-1] < 122 {
+				if new[i] >= 'a' && new[i] <= 'z' {
+					new[i] = (new[i] - 32)
+					i++
+				}
+			}
+		}
+		if i > 0 {
+			if new[i-1] > 90 || new[i-1] < 97 {
 				if new[i] >= 'a' && new[i] <= 'z' {
 					new[i] = (new[i] - 32)
 					i++
