@@ -1,34 +1,35 @@
 package piscine
 
-// import (
-// 	"fmt"
-// )
-
 func Index(s string, toFind string) int {
-	var x int
 	str := []rune(s)
 	sub := []rune(toFind)
-	y := 0
-	z := 0
-	for range s {
-		y++
+	len1 := 0
+	len2 := 0
+	for index := range sub {
+		index = index
+		len2++
 	}
-	for range toFind {
-		z++
+	if len2 == 0 {
+		return 0
 	}
-	if y > 0 && z > 0 {
-		for i := 0; i <= y-1; i++ {
-			if str[i] == sub[0] {
-				x = i
-				break
-			} else {
-				x = -1
+	for index := range str {
+		index = index
+		len1++
+	}
+	for index, letter := range str {
+		if letter == sub[0] && len1 >= len2+index-1 {
+			m := 1
+			for i := 1; i < len2; i++ {
+				if sub[i] == str[index+i] {
+					m++
+				}
+			}
+			if m == len2 {
+				return index
 			}
 		}
-	} else {
-		x = 0
 	}
-	return x
+	return -1
 }
 
 // func main() {
