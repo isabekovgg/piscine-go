@@ -19,8 +19,8 @@ func PrintNbrInOrder(n int) {
 	for range arr {
 		ran++
 	}
-	for ind1 := 0; ind1 < ran-2; ind1++ {
-		for ind2 := 1; ind2 < ran-1; ind2++ {
+	for ind1 := 0; ind1 < ran-1; ind1++ {
+		for ind2 := ind1; ind2 < ran; ind2++ {
 			if arr[ind1] > arr[ind2] {
 				arr[ind1], arr[ind2] = arr[ind2], arr[ind1]
 			}
@@ -32,7 +32,7 @@ func PrintNbrInOrder(n int) {
 }
 
 // func main() {
-// 	PrintNbrInOrder(321)
-// 	PrintNbrInOrder(0)
-// 	PrintNbrInOrder(321)
+// 	// PrintNbrInOrder(321)
+// 	PrintNbrInOrder(321321)
+// 	// PrintNbrInOrder(2376960573752928263)
 // }
