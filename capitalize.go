@@ -19,7 +19,6 @@ func Capitalize(s string) string {
 			if (new[i-1] > 'Z' && new[i-1] < 'a') || (new[i-1] < 'A' && new[i-1] > '9') || new[i-1] < '0' || new[i-1] > 'z' {
 				if new[i] >= 'a' && new[i] <= 'z' {
 					new[i] = (new[i] - 32)
-					i++
 				}
 			}
 		}
