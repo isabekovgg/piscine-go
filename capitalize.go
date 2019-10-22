@@ -1,0 +1,34 @@
+package piscine
+
+// import "fmt"
+
+func Capitalize(s string) string {
+	y := 0
+	new := []rune(s)
+	for range s {
+		y++
+	}
+	for i := 0; i < y; i++ {
+
+		if new[i] >= 'A' && new[i] <= 'Z' {
+			new[i] = (new[i] + 32)
+		}
+		if new[0] >= 'a' && new[0] <= 'z' {
+			new[0] = (new[0] - 32)
+		}
+		if i > 0 {
+			if new[i-1] == ' ' {
+				if new[i] >= 'a' && new[i] <= 'z' {
+					new[i] = (new[i] - 32)
+					i++
+				}
+			}
+		}
+	}
+	str := string(new)
+	return str
+}
+
+// func main() {
+// 	fmt.Println(Capitalize("Hello! How are you? How+are+things+4you?"))
+// }
