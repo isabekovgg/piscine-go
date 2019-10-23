@@ -7,20 +7,17 @@ import (
 )
 
 func main() {
-
+	len := 0
 	arg := os.Args
-
-	for j := range arg {
-		if j > 0 {
-			mas := []rune(arg[j])
-			i := 0
-			for range mas {
-				i++
-			}
-			for z := i - 1; z >= 0; z-- {
-				z01.PrintRune(mas[z])
-			}
-			z01.PrintRune(10)
+	for range arg {
+		len++
+	}
+	for x := len - 1; x > 0; x-- {
+		mas := []rune(arg[x])
+		for z := range mas {
+			z01.PrintRune(mas[z])
 		}
+		z01.PrintRune(10)
+
 	}
 }
