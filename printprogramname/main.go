@@ -1,13 +1,15 @@
 package main
 
 import (
-	"fmt"
 	"os"
+
+	"github.com/01-edu/z01"
 )
 
 func main() {
 
-	arg := os.Args
-	fmt.Printf("%v", arg[0])
-
+	arg := os.Args[0]
+	for i := range arg {
+		z01.PrintRune(rune(arg[i]))
+	}
 }
